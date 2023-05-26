@@ -13,3 +13,10 @@ minetest.register_craft({
 		{"nether:geode", "default:glass", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "dream_blocks:glowstone_red 2",
+    recipe = {
+		{"nether:geode", "default:coal_lump", ""},
+	}
+})

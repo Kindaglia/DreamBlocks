@@ -5,7 +5,7 @@ minetest.register_node("dream_blocks:stair_nether_red", {
     paramtype = "light",
     paramtype2 = "facedir",
     is_ground_content = true,
-    groups = {cracky = 3, oddly_breakable_by_hand = 3, nether_crystal = 1},
+    groups = {cracky = 3, oddly_breakable_by_hand = 3},
     node_box = {
         type = "fixed",
         fixed = {
@@ -26,4 +26,15 @@ minetest.register_node("dream_blocks:obsidian_glass_nether", {
 	sunlight_propagates = true,
 	sounds = default.node_sound_glass_defaults(),
 	groups = {cracky = 3},
+})
+
+minetest.register_node("dream_blocks:glowstone_red", {
+	description = ("Glowstone Red"),
+	tiles = {"nether_glowstone_red.png"},
+	is_ground_content = true,
+	light_source = 14,
+	paramtype = "light",
+	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	sounds = default.node_sound_glass_defaults(),
+	can_dig = transmogrified_can_dig,
 })
