@@ -38,3 +38,5 @@ minetest.register_node("dream_blocks:glowstone_red", {
 	sounds = default.node_sound_glass_defaults(),
 	can_dig = transmogrified_can_dig,
 })
+
+
